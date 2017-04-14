@@ -29,10 +29,10 @@ It is production ready and fully configurable via environment.
 <img alt="Passport" src="https://vickev.com/uploads/1376269369423.png"  width="300"/>
 </a>
 <a alt="Mocha" href="https://mochajs.org/">
-<img alt="Mocha + Chai" src="https://dl.dropboxusercontent.com/u/43829404/Artjoker/mocha-chai.png"  width="150"/>
+<img alt="Mocha + Chai" src="https://www.dropbox.com/s/1u7a1893085s9jp/mocha-chai.png?dl=0&raw=1"  width="150"/>
 </a>
 <a alt="ESLint" href="http://eslint.org/">
-<img alt="ESLint" src="https://dl.dropboxusercontent.com/u/43829404/Artjoker/eslint.png"  width="230"/>
+<img alt="ESLint" src="https://www.dropbox.com/s/i9l0kuxg0orpvwn/eslint.png?dl=0&raw=1"  width="230"/>
 </a>
 
 ### Commands:
