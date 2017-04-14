@@ -1,0 +1,7 @@
+reporting:
+    print: summary
+    reports:
+        - lcov
+        - json
+        - html
+    dir: ./coverage

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "SJe6cQWU_",
+    "message": "Very good product",
+    "rating": 5,
+    "product_id": "rJT9XbLd"
+  },
+  {
+    "id": "BJZ69mbL_",
+    "message": "So-so",
+    "rating": 3,
+    "product_id": "rJT9XbLd"
+  },
+  {
+    "id": "SJM6qQZLu",
+    "message": "Awful",
+    "rating": 1,
+    "product_id": "rJT9XbLd"
+  },
+  {
+    "id": "axa6q9slp",
+    "message": "Awesome",
+    "rating": 5,
+    "product_id": "SJe6cQWU_"
+  }
+]

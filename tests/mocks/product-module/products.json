@@ -1,0 +1,38 @@
+[
+  {
+    "id": "rJT9XbLd",
+    "name": "iPhone 6S",
+    "price": 650,
+    "rating": 80
+  },
+  {
+    "id": "SJe6cQWU_",
+    "name": "iPad 2016",
+    "price": 800,
+    "rating": 54
+  },
+  {
+    "id": "BJZ69mbL_",
+    "name": "MackBook Pro Retina 2015 13'",
+    "price": 1199,
+    "rating": 91
+  },
+  {
+    "id": "SJM6qQZLu",
+    "name": "MackBook Pro Retina 2015 15'",
+    "price": 1495,
+    "rating": 96
+  },
+  {
+    "id": "SkVp5Q-8O",
+    "name": "iPhone 6SE",
+    "price": 550,
+    "rating": 78
+  },
+  {
+    "id": "SkST9mbIO",
+    "name": "Apple Watch",
+    "price": 400,
+    "rating": 69
+  }
+]

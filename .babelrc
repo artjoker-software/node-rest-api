@@ -1,0 +1,22 @@
+{
+  "presets": ["es2015", "stage-0"],
+
+  "plugins": [
+    "transform-runtime",
+    "add-module-exports",
+    "transform-decorators-legacy"
+  ],
+
+  "env": {
+    "development": {
+      "plugins": [
+        "typecheck"
+      ]
+    },
+    "test": {
+      "plugins": []
+    }
+  },
+
+  "retainLines": true
+}

@@ -1,0 +1,116 @@
+{
+  "name": "Artjoker-API",
+  "description": "Rest API template example",
+  "author": "Vlad Kolbaya <vlad.kolbaya@gmail.com> (https://github.com/v1adko)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artjoker/node-rest-api"
+  },
+  "main": "./bin/server.js",
+  "engines": {
+    "node": "6.1.0"
+  },
+  "scripts": {
+    "start": "bnr start-prod-api",
+    "local": "bnr start-local-api",
+    "lint": "eslint .",
+    "test": "bnr test",
+    "test-suite": "bnr test-suite",
+    "cover": "babel-node node_modules/.bin/babel-istanbul cover",
+    "mocks": "babel-node ./utils/db/generateMocks.js",
+    "reset-db": "bnr reset-db"
+  },
+  "betterScripts": {
+    "start-prod-api": {
+      "command": "node ./bin/server.js",
+      "env": {
+        "NODE_PATH": "./"
+      }
+    },
+    "start-local-api": {
+      "command": "node ./bin/server.js",
+      "env": {
+        "NODE_PATH": "./",
+        "NODE_ENV": "local",
+        "PORT": 3030
+      }
+    },
+    "test": {
+      "command": "npm run cover _mocha --recursive $(find ./tests -name '*.test.js')",
+      "env": {
+        "NODE_ENV": "test"
+      }
+    },
+    "test-suite": {
+      "command": "mocha --colors --compilers js:babel-register --recursive",
+      "env": {
+        "NODE_ENV": "test"
+      }
+    },
+    "reset-db": {
+      "command": "babel-node ./utils/db/resetDatabase.js",
+      "env": {
+        "NODE_ENV": "local"
+      }
+    }
+  },
+  "dependencies": {
+    "axios": "^0.15.0",
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "babel-runtime": "^6.22.0",
+    "bcrypt": "^1.0.2",
+    "better-npm-run": "0.0.14",
+    "body-parser": "^1.16.0",
+    "co": "^4.6.0",
+    "compression": "^1.6.2",
+    "connect-mongo": "^1.3.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.1",
+    "express-session": "^1.15.0",
+    "helmet": "^3.4.0",
+    "http-status-codes": "^1.1.6",
+    "ip-regex": "^2.0.0",
+    "joi": "^10.2.1",
+    "jsonwebtoken": "^7.1.9",
+    "lodash": "^4.16.3",
+    "memory-cache": "^0.1.6",
+    "mongoose": "^4.8.1",
+    "mongoose-immutable": "0.0.2",
+    "mongoose-unique-validator": "^1.0.2",
+    "mongoose-validator": "^1.2.5",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "piping": "^1.0.0-rc.4",
+    "querystring": "^0.2.0",
+    "request-ip": "^1.2.2",
+    "shortid": "^2.2.6",
+    "useragent": "^2.1.11",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-eslint": "^7.1.1",
+    "babel-istanbul": "^0.12.1",
+    "babel-plugin-typecheck": "^3.9.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "mocha": "^3.2.0",
+    "mongodb": "^2.2.22",
+    "proxyquire": "^1.7.11",
+    "sinon": "^1.17.7",
+    "supertest": "^3.0.0",
+    "timekeeper": "^1.0.0"
+  }
+}
